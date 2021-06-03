@@ -16,7 +16,7 @@ export class Post extends Document{
     @Prop()
     img: string;
 
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'User' })
-    author: User | string;
+    /* @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'User' })
+    author: User | string; */
 }
 export const PostSchema = SchemaFactory.createForClass(Post);
